@@ -1,0 +1,67 @@
+document.addEventListener("DOMContentLoaded", () => {
+    function nextSection(sectionNumber) {
+        // Ensure the section number is valid
+        const nextSection = document.getElementById(section-${sectionNumber});
+        if (!nextSection) {
+            console.error(Section ${sectionNumber} does not exist.);
+            return;
+        }
+
+        // Hide all sections
+        document.querySelectorAll('.section').forEach((section) => {
+            section.style.display = 'none';
+        });
+
+        // Show the next section
+        nextSection.style.display = 'block';
+    }
+
+    function prevSection(sectionNumber) {
+        // Ensure the section number is valid
+        const prevSection = document.getElementById(section-${sectionNumber});
+        if (!prevSection) {
+            console.error(Section ${sectionNumber} does not exist.);
+            return;
+        }
+
+        // Hide all sections
+        document.querySelectorAll('.section').forEach((section) => {
+            section.style.display = 'none';
+        });
+
+        // Show the previous section
+        prevSection.style.display = 'block';
+    }
+
+    function submitTest() {
+        const correctAnswers = {
+            q1: '4',
+            q2: '30',
+            q3: 'Paris',
+            q4: '5',
+            q5: 'Shakespeare',
+            q6: 'Planet',
+        };
+
+        let score = 0;
+        let totalQuestions = 0;
+        for (let question in correctAnswers) {
+            totalQuestions++;
+            const userAnswer = document.querySelector(input[name="${question}"]:checked);
+            if (userAnswer && userAnswer.value === correctAnswers[question]) {
+                score++;
+            }
+        }
+
+        document.getElementById('testForm').style.display = 'none';
+        document.getElementById('result').style.display = 'block';
+        document.getElementById('score').innerText = You scored ${score} out of ${totalQuestions}. Correct: ${score}, Incorrect: ${totalQuestions - score}.;
+
+        alert("Test submitted successfully. Click OK to see your result.");
+    }
+
+    // Expose the functions to the global scope for button onclick attributes
+    window.nextSection = nextSection;
+    window.prevSection = prevSection;
+    window.submitTest = submitTest;
+});

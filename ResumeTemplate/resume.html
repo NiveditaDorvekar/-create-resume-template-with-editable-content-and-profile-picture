@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="resume" id="resume">
+        <div class="header">
+            <div class="profile-picture">
+                <img src="NIVEDITA_PROFILE.jpg" alt="Profile Picture" id="profile-img">
+                <input type="file" id="upload" accept="image/*" onchange="loadFile(event)">
+            </div>
+            <div class="personal-info">
+                <h1 contenteditable="true">Nivedita Arvind Dorvekar</h1>
+                <h2 contenteditable="true">Mobile: 7879723487</h2>
+                <h2 contenteditable="true">Email Id: niveditadorvekar0123@gmail.com</h2>
+                <h2>LinkedIn Id: <a href="https://www.linkedin.com/in/nivedita-dorvekar-676455218" >www.linkedin.com/in/nivedita-dorvekar-676455218</a></h2>
+            </div>
+        </div>
+        <hr>
+
+        <h2 contenteditable="true">Career Objective:</h2>
+        <p contenteditable="true"> To secure employment with a reputable company, where I can utilize my skills and business studies background to the maximum.</p>
+
+        <h2>Educational Qualifications</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>University</th>
+                    <th>Year of Passout</th>
+                    <th>Percentage/CGPA</th>
+                </tr>
+            </thead>
+            <tbody contenteditable="true">
+                <tr>
+                    <td>B-TECH</td>
+                    <td>Thakur Shivkumar Singh Memorial Group of Institution, ziri Burhanpur (M.P.)</td>
+                    <td>RGPV University</td>
+                    <td>2018-2022</td>
+                    <td>9.04 CGPA</td>
+                </tr>
+                <tr>
+                    <td>HSC / 12th</td>
+                    <td>New Gyandeep H.S.School, Doiphodiya</td>
+                    <td>MPBSE </td>
+                    <td> 2017-2018</td>
+                    <td>78.6%</td>
+                </tr>
+                <tr>
+                    <td>SSC / 10th</td>
+                    <td>New Gyandeep H.S.School, Doiphodiya</td>
+                    <td>MPBSE </td>
+                    <td>2015-2016</td>
+                    <td>79.16%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Project Details</h2>
+        <p contenteditable="true"><b>Minor Project - Aarogya Medicine Donation.</b><br>
+<b>Technology – </b>HTML, CSS, Java, Bootstrap, SQL.<br>
+<b>Project - NIVI_ShoppingSite.</b><br>
+<b>Technology – </b>HTML, CSS, JavaScript, Java, J2EE Bootstrap, My SQL.</p>
+
+        <h2>Software Proficiency</h2>
+        <ul contenteditable="true"> 
+            <li>Basic computer knowledge.</li>
+            <li>Programming Language: C, C++, Core Java, J2EE.</li>
+            <li>Web Technology: HTML, CSS, Bootstrap, JavaScript.</li>
+            <li>Database: SqLite Server, My SQL.</li>
+            <li>Testing: Manual Testing.</li>
+            <li>Operating System: Windows, Linux.</li>
+        </ul>
+
+        <h2>Achievements</h2>
+        <ul contenteditable="true">
+            <li>Certificate In Full Stack Java Developer.</li>
+            <li>Certificate In C++ Language.</li>
+            <li>Certificate In C Language</li>
+        </ul>
+
+        <h2>Work Experience</h2>
+        <ul contenteditable="true">
+            <li>Subject Matter Expert in Vaidik Eduservices Private Limited, Noida from August 2023 to April 2024.</li>
+        </ul>
+
+        <h2>Key Interests</h2>
+        <b>Core Java</b>
+        <ul contenteditable="true">
+            <li>Knowledge of OOP’s Concept.</li>
+            <li>Knowledge of Array, String, and Control Flow Statement.</li>
+            <li>Knowledge of Abstraction and Encapsulation.</li>
+            <li>Knowledge of Exception Handling and Collection.</li>
+        </ul>
+        <b>Advance Java</b>
+        <ul contenteditable="true">
+            <li>Steps in JDBC and Batch Processing.</li>
+            <li>Life cycle of Servlet, Generic servlet, http servlet.</li>
+            <li>Knowledge of cookies and http-session.</li>
+            <li>Life cycle of JSP, implicit object in jsp.</li>
+            <li>Tags in jsp, Error page, URL-ReWriting.</li>
+        </ul>
+        <b>Manual Testing</b>
+        <ul contenteditable="true">
+            <li>Knowledge of Black Box Testing and White Box Testing.</li>
+            <li>Knowledge of SDLC and STLC.</li>
+            <li>Knowledge of SDLC Models.</li>
+            <li>Good in Writing an Integration Testing Scenario.</li>
+        </ul>
+        <b>SQL</b>
+        <ul contenteditable="true">
+            <li>Knowledge of Clauses, Subqueries & Joins.</li>
+            <li>Comfortable in writing SQL statements like DDL, DML, DQL.</li>
+            <li>Good understanding of SQL queries.</li>
+        </ul>
+
+        <h2>Interest and Hobbies</h2>
+        <ul contenteditable="true">
+            <li>Listening to Music.</li>
+            <li>Playing Cricket.</li>
+        </ul>
+
+        <h2>Personal Profile</h2>
+        <ul contenteditable="true">
+            <li><b>Date Of Birth:</b> 21 April 2000</li>
+            <li><b>Gender:</b> Female</li>
+            <li><b>Marital Status:</b> Single</li>
+            <li><b>Languages Known:</b> English, Hindi, Marathi</li>
+            <li><b>Nationality:</b> Indian</li>
+        </ul>
+
+        <h2>Declaration</h2>
+        <p contenteditable="true">I hereby declare that the above mentioned information is correct up to my knowledge and I bear the responsibility for the correctness of the above mentioned particulars.</p>
+        <br>Place: Pune
+        <br>Yours sincerely,
+        <br>Nivedita Dorvekar</p>
+    </div>
+
+    <button onclick="downloadPDF()">Download as PDF</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="resumetem.js"></script>
+</body>
+</html>
+
